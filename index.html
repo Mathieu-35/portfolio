@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mathieu Randriamoria — Développeur Full-Stack, stage de 6 mois</title>
+  <meta name="description" content="Portfolio de Mathieu Randriamoria, étudiant en Licence SIO à l'ESMIA. Développeur Full-Stack (FastAPI, React, PHP), disponible pour un stage de 6 mois.">
+  <!-- Partage (Open Graph). [À REMPLACER] par l'adresse réelle de ton site une fois publié -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mathieu Randriamoria — Développeur Full-Stack">
+  <meta property="og:description" content="Étudiant en informatique, disponible pour un stage de 6 mois.">
+  <meta property="og:image" content="https://[À REMPLACER]/og-image.jpg">
+  <meta name="theme-color" content="#1F3864">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+  <header class="top">
+    <div class="wrap bar">
+      <a class="brand" href="#accueil">Mathieu R.</a>
+      <button id="burger" class="icon-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav id="menu" aria-label="Navigation principale">
+        <a href="#accueil">Accueil</a><a href="#apropos">À propos</a><a href="#projets">Projets</a>
+        <a href="#competences">Compétences</a><a href="#parcours">Parcours</a><a href="#contact">Contact</a>
+      </nav>
+      <button id="theme" class="icon-btn" aria-pressed="false">Mode sombre</button>
+    </div>
+  </header>
+  <main id="main">
+    <section id="accueil" class="hero"><div class="wrap hero-grid">
+      <div id="hero-content"></div>
+      <img class="photo" src="photo.jpg" alt="Portrait de Mathieu Randriamoria en costume" width="640" height="858">
+    </div></section>
+    <section id="apropos"><div class="wrap narrow"><h2>À propos</h2><p id="apropos-text"></p></div></section>
+    <section id="projets" class="alt"><div class="wrap"><h2>Projets</h2><div id="projets-list" class="grid"></div></div></section>
+    <section id="competences"><div class="wrap"><h2>Compétences</h2><div id="skills-list" class="grid small"></div></div></section>
+    <section id="parcours" class="alt"><div class="wrap narrow"><h2>Parcours</h2>
+      <ol id="timeline" class="timeline"></ol><h3 class="sub">Langues</h3><ul id="langues" class="plain"></ul></div></section>
+    <section id="contact"><div class="wrap narrow center"><h2 id="contact-title"></h2>
+      <div id="contact-links" class="btns center"></div><p id="contact-info" class="meta"></p></div></section>
+    <noscript><p class="wrap">Ce site nécessite JavaScript. Contact : randriamoria7@gmail.com</p></noscript>
+  </main>
+  <footer id="footer" class="wrap foot"></footer>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
