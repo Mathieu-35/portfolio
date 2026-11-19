@@ -664,8 +664,10 @@ nav a[aria-current="true"] {
 .card img {
   width: 100%;
   height: auto;
-  aspect-ratio: 2.15;
+  aspect-ratio: 2 / 1;
   object-fit: cover;
+  object-position: top center;
+  background: var(--soft);
   border-bottom: 1px solid var(--line);
   transition: transform 0.7s ease;
 }
